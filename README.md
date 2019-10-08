@@ -5,42 +5,38 @@
 ### Author: Martin Balke
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/martinbalke-401-adavanced-js/401-lab-03/pull/1)
+* [travis](https://www.travis-ci.com/martinbalke-401-adavanced-js/401-lab-03)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### `fsAsync.js`
+##### async.readAndWrite
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `readAndWrite(filepath) -> string`
+Input is a filepath and the return is a string confirming that the file has been overwritten correctly. This version of the function is using async/await
 
-###### `bar(array) -> array`
-Usage Notes or examples
+#### `fsPromise.js`
+##### promise.readAndWrite
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+###### `readAndWrite(filepath) -> string`
+Input is a filepath and the return is a string confirming that the file has been overwritten correctly.
+
+#### `fsCallback.js`
+##### callback.readAndWrite
+
+###### `readAndWrite(filepath) -> string`
+Input is a filepath and the return is a string confirming that the file has been overwritten correctly.
+
+
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* How do you run tests? npm test
+* What assertions were made? I can't seem to get mocks working so not really any at all
+* What assertions need to be / should be made? How to get mocks working?
 
 #### UML
 Link to an image of the UML for your application and response to events
