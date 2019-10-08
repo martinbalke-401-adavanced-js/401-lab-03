@@ -1,8 +1,8 @@
-# LAB - 
+# LAB - 03
 
-## Project Name
+## Callbacks, Promises, Async/Await
 
-### Author: Student/Group Name
+### Author: Martin Balke
 
 ### Links and Resources
 * [submission PR](http://xyz.com)

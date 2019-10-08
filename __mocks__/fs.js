@@ -9,3 +9,11 @@ exports.readFile = (file, cb) => {
     cb(undefined, new Buffer('File Contents'));
   }
 };
+
+exports.writeFile = (file, cb) => {
+  if (file.match(/thing/i)) {
+    cb('File save was not successful');
+  } else {
+    cb(undefined, 'File save successful');
+  }
+};
