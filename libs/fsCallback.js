@@ -41,16 +41,18 @@ const write = (filepath, file, callback) => {
 exports.readAndWrite = (filePath) => {
   try {
     read(filePath, (error, data) => {
+      if(error) return console.error(error);
       data = JSON.stringify(data);
       write(filePath, data, () => {
         read(filePath, (error, data) => {
+          if (error) return console.error(error);
           data = JSON.stringify(data);
           helpers.verifyDataChange(dataToCompare, data);
         });
       });
     });
   } catch (error) {
-    console.error(error);
+    return console.error(error);
   }
 };
 
