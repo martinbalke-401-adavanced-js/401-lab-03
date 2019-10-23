@@ -38,4 +38,4 @@ Input is a filepath and the return is a string confirming that the file has been
 * What assertions were made? Mocks are working properly and the program functions correctly
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML](./assets/UML.jpg)
